@@ -5,61 +5,60 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    /* General Styles */
     body {
       font-family: 'Open Sans', sans-serif;
       background: linear-gradient(to right, #141e30, #243b55);
       color: white;
       text-align: center;
+
+      /* Make layout tighter and avoid "separate page" feel */
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;   /* was center */
+      min-height: 100vh;            /* was height */
       margin: 0;
       padding: 20px;
     }
 
     .container {
       background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
+      padding: 24px;               /* slightly tighter */
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       max-width: 500px;
       width: 90%;
     }
 
-    /* Heading */
     .heading {
       font-size: 28px;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin: 0 0 8px;             /* tighter */
     }
 
     .subheading {
       font-size: 18px;
       font-weight: 400;
-      margin-bottom: 20px;
+      margin: 0 0 16px;            /* tighter */
       color: #ddd;
     }
 
-    /* Important Message */
     .important-message {
       background: rgba(255, 255, 255, 0.2);
-      padding: 15px;
+      padding: 14px;
       border-radius: 8px;
       font-size: 16px;
       font-weight: 600;
       color: #ffcc00;
-      margin-bottom: 20px;
+      margin: 0 0 16px;            /* tighter */
       text-align: left;
+      line-height: 1.35;           /* improves readability */
     }
 
-    /* Button Styles */
     .button {
       display: block;
       width: 100%;
-      padding: 15px;
+      padding: 14px;               /* slightly tighter */
       border-radius: 5px;
       color: white;
       font-size: 16px;
@@ -71,17 +70,29 @@
     }
 
     .button:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
+      transform: scale(1.03);      /* slightly less jumpy */
+      opacity: 0.92;
     }
 
-    /* Button Gradients */
     .button1 { background: linear-gradient(to right, #ff2e63, #ff824a); }
     .button2 { background: linear-gradient(to right, #1e90ff, #00bfff); }
     .button3 { background: linear-gradient(to right, #32cd32, #9acd32); }
     .button4 { background: linear-gradient(to right, #555555, #333333); }
     .button5 { background: linear-gradient(to right, #ff8c00, #ff6347); }
-	.button6 { background: linear-gradient(to right, #6a5acd, #836fff); }
+    .button6 { background: linear-gradient(to right, #6a5acd, #836fff); }
+
+    /* Compact section divider for NIJUGIRI */
+    .section-divider {
+      margin: 18px 0 12px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .section-title {
+      margin: 14px 0 8px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
@@ -92,7 +103,8 @@
 
     <div class="important-message">
       <strong>Important Point:</strong><br>
-      Leaders, please assign the JIGIRI tasks among team members, ensuring that each member performs a different type. All JIGIRI types must be completed by the end of the day.<br><br>
+      Leaders, please assign the JIGIRI tasks among team members, ensuring that each member performs a different type.
+      All JIGIRI types must be completed by the end of the day.<br><br>
       - COIL BY C-HOOK (EYE SIDE)<br>
       - COIL BY SLING (EYE UP)<br>
       - FORKLIFT/REACHTRUCK OPERATION
@@ -101,14 +113,11 @@
     <a href="https://form.jotform.com/231937638636468" class="button button1">COIL BY C-HOOK (EYE SIDE)</a>
     <a href="https://form.jotform.com/231938311351451" class="button button4">COIL BY SLING (EYE UP)</a>
     <a href="https://form.jotform.com/250421801585452" class="button button5">FORKLIFT/REACHTRUCK OPERATION</a>
-	
-	<!-- Add this below your existing buttons inside the container div -->
-  </div>
-    <div class="container">
-    <h1 class="heading">NIJUGIRI</h1>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">NIJUGIRI</div>
     <a href="https://form.jotform.com/251418298333056" class="button button6">NIJUGIRI PATROL</a>
-	
-	<!-- Add this below your existing buttons inside the container div -->
   </div>
 
 </body>
